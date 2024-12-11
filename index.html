@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Elegance offers luxury accommodations with exclusive services including a gourmet restaurant, infinity pool, and personal concierge. Book your stay at our 5-star hotel now!">
+    <meta name="keywords" content="hotel, luxury, booking, elegance, rooms, services, spa, infinity pool, gourmet restaurant">
+    <title>Hotel Elegance - Luxury Accommodations & Unmatched Comfort</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hotel Elegance",
+      "image": "https://example.com/images/hotel-image.jpg",
+      "description": "Hotel Elegance offers a luxury stay with unparalleled service. Located in the heart of Elegant City, enjoy world-class facilities and personalized services.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Luxury Avenue 123",
+        "addressLocality": "Elegant City",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34 912 345 678",
+      "url": "https://www.hotelelegance.com"
+    }
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo" title="Hotel Elegance - Luxury Hotel">Hotel Elegance</a>
+            <ul class="nav-links">
+                <li><a href="#home" title="Home Page">Home</a></li>
+                <li><a href="#rooms" title="Our Rooms">Rooms</a></li>
+                <li><a href="#services" title="Exclusive Services">Services</a></li>
+                <li><a href="#booking" title="Book Your Stay">Booking</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Hotel Elegance</h1>
+                <p>Discover luxury and comfort in every detail of our unique hotel experience in Elegant City.</p>
+                <a href="#booking" class="btn" title="Book Your Stay">Book Your Stay</a>
+            </div>
+        </section>
+    
+        <section id="rooms" class="rooms">
+            <div class="container">
+                <h2 class="section-title">Our Luxury Rooms</h2>
+                <div class="room-grid">
+                    <div class="room-card">
+                        <div class="room-image" style="background-image: url('../assets/img/room2.jpg');" alt="Presidential Suite"></div>
+                        <div class="room-info">
+                            <h3>Presidential Suite</h3>
+                            <p>Experience luxury at its finest with our most exclusive suite</p>
+                            <span class="room-price">From €500/night</span>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image" style="background-image: url('../assets/img/room1.jpg');" alt="Executive Suite"></div>
+                        <div class="room-info">
+                            <h3>Executive Suite</h3>
+                            <p>Comfort and style in a space designed for the discerning business traveler</p>
+                            <span class="room-price">From €300/night</span>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-image" style="background-image: url('../assets/img/room3.jpg');" alt="Deluxe Room"></div>
+                        <div class="room-info">
+                            <h3>Deluxe Room</h3>
+                            <p>Elegance and comfort in a cozy and sophisticated atmosphere</p>
+                            <span class="room-price">From €200/night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Exclusive Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <!-- Ikona talerza (kuchnia) -->
+                        <i class="fa fa-utensils service-icon"></i>
+                        <h3>Gourmet Restaurant</h3>
+                        <p>Delight yourself with our exquisite world-class cuisine in a sophisticated setting with panoramic views.</p>
+                    </div>
+                    <div class="service-card">
+                        <!-- Ikona basenu z falą (pływanie) -->
+                        <i class="fa fa-swimmer service-icon"></i>
+                        <h3>Infinity Pool & Spa</h3>
+                        <p>Immerse yourself in total relaxation in our infinity pool with horizon views and enjoy luxurious spa treatments.</p>
+                    </div>
+                    <div class="service-card">
+                        <!-- Ikona serca (zdrowie) -->
+                        <i class="fa fa-heart service-icon"></i>
+                        <h3>Personal Concierge</h3>
+                        <p>Our concierge team is available 24/7 to meet all your needs during your stay.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+        <section id="booking" class="booking">
+            <div class="container">
+                <h2 class="section-title">Book Your Luxury Experience</h2>
+                <form class="booking-form" id="bookingForm" action="submit-booking-form" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in">Check-in Date</label>
+                        <input type="date" id="check-in" name="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Check-out Date</label>
+                        <input type="date" id="check-out" name="check-out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Room Type</label>
+                        <select id="room-type" name="room-type" required>
+                            <option value="">Select a room</option>
+                            <option value="presidential">Presidential Suite</option>
+                            <option value="executive">Executive Suite</option>
+                            <option value="deluxe">Deluxe Room</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grand Royal Hotel</h3>
+                    <p>Where luxury meets comfort for an unforgettable stay</p>
+                    <p>Royal Boulevard 789, Prestige City</p>
+                    <p>Phone: +1 800 123 4567</p>
+                    <p>Email: <a href="mailto:reservations@grandroyalhotel.com">reservations@grandroyalhotel.com</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" title="Home Page">Home</a></li>
+                        <li><a href="#rooms" title="Rooms">Rooms</a></li>
+                        <li><a href="#services" title="Services">Services</a></li>
+                        <li><a href="#booking" title="Booking">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Hotel Elegance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Booking Confirmed</h2>
+            <p>Thank you for choosing Hotel Elegance. We have received your booking request and sent you a confirmation email. We look forward to welcoming you soon.</p>
+        </div>
+    </div>
+    
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
